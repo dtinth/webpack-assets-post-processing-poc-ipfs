@@ -1,8 +1,15 @@
 # webpack runtime asset path post-processing use-case example with IPFS
 
-This is an example site with a efficient long-term caching and assets integrity,
-powered by IPFS. Each asset file is deployed separately to IPFS, allowing
-maximum reuse of assets.
+This is an example site built using a webpack setup with a efficient long-term
+caching and assets integrity, by deploying assets to IPFS.
+
+- Each asset file is added to IPFS separately. This allows maximum reuse of
+  assets.
+
+- Asset integrity is ensured since IPFS is content-addressed — you refer to an
+  asset via the hash of its contents.
+
+## Setup overview
 
 1. Run `yarn` to install dependencies.
 
