@@ -1,0 +1,13 @@
+div {
+  margin: 0 auto;
+  font-size: 64px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-shadow: 4px 4px 0 black;
+  text-align: center;
+  line-height: 480px;
+  width: 640px;
+  height: 480px;
+  background: black url(./jan-vanveen-1115490-unsplash.jpg) center no-repeat;
+  background-size: cover;
+}

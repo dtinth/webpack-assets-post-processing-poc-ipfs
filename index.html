@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Getting Started</title>
+  <script src="https://unpkg.com/lodash@4.16.6"></script>
+</head>
+
+<body>
+  <script>
+    AppRuntime = {
+      assetMap: {},
+      postProcessAssetPath: function (assetPath) {
+        var hash = AppRuntime.assetMap[assetPath]
+        if (hash) return '/ipfs/' + hash + '/' + assetPath
+        return 'dist/' + assetPath
+      }
+    }
+  </script>
+  <script src="dist/main.js"></script>
+</body>
+
+</html>
